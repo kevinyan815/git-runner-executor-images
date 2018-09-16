@@ -24,6 +24,7 @@ RUN docker-php-ext-install pdo pdo_mysql mcrypt zip gd
 # |
 RUN curl --silent --show-error https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer &&\
     composer config -g repo.packagist composer https://packagist.laravel-china.org
+    # remove composer config -g repo.packagist composer https://packagist.laravel-china.org if you doesn't locate in China.
 
 # |--------------------------------------------------------------------------
 # | NodeJS
@@ -39,6 +40,7 @@ RUN apt-get update &&\
     apt-get update &&\
     apt-get install -y --no-install-recommends nodejs &&\
     npm config set registry https://registry.npm.taobao.org --global
+    # remove npm config set registry https://registry.npm.taobao.org --global if you doesn't locate in China.
 
 
 # |--------------------------------------------------------------------------
