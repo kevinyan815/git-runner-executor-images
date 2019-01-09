@@ -14,7 +14,7 @@ RUN apt-get clean
 
 # Install needed extensions
 # Here you can install any other extension that you need during the test and deployment process
-RUN docker-php-ext-install pdo pdo_mysql mcrypt zip gd
+RUN docker-php-ext-install pdo pdo_mysql mcrypt zip gd pcntl opcache bcmath
 
 # |--------------------------------------------------------------------------
 # | Composer
