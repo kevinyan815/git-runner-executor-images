@@ -62,4 +62,4 @@ RUN curl -sSL "https://codeload.github.com/phalcon/cphalcon/tar.gz/v${PHALCON_VE
 # | Installs Composer to easily manage your PHP dependencies.
 # |
 RUN curl --silent --show-error https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer &&\
-    composer config -g repo.packagist composer https://packagist.laravel-china.org
+    composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
