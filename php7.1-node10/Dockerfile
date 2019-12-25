@@ -24,7 +24,7 @@ RUN docker-php-ext-install pdo pdo_mysql mcrypt zip gd pcntl opcache bcmath
 # |
 RUN curl --silent --show-error https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer &&\
     composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
-    # remove composer config -g repo.packagist composer https://packagist.laravel-china.org if you don't locate in China.
+    # remove composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/ if you don't locate in China.
 
 # |--------------------------------------------------------------------------
 # | NodeJS
